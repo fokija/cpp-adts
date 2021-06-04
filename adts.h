@@ -72,6 +72,7 @@ class StackOfIntsImplVector : public StackOfInts
             }
             std::cout << std::endl;
         }
+        ~StackOfIntsImplVector() override = default;
     private:
         std::vector<int> vectorOfInts;
 };
@@ -111,6 +112,7 @@ class StackOfIntsImplList : public StackOfInts
             }
             std::cout << std::endl;
         }
+        ~StackOfIntsImplList() override = default;
     private:
         std::list<int> listOfInts;
 };
@@ -144,6 +146,7 @@ class QueueOfIntsImplVector : public QueueOfInts
             }
             std::cout << std::endl;
         }
+        ~QueueOfIntsImplVector() override = default;
     private:
         std::vector<int> vectorOfInts;
 };
@@ -175,7 +178,7 @@ class QueueOfIntsImlList : public QueueOfInts
         }
         std::cout << std::endl;
     }
-    
+    ~QueueOfIntsImlList() override = default;
     private:
         std::list<int> listOfInts;
 };
